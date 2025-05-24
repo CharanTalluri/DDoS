@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDoS Detection System</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1a73e8, #e94057, #ff6a00);
+            color: #fff;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* Header Styles */
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1em 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            animation: fadeInDown 1s ease;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff6a00;
+        }
+        /* Hero Section */
+        main {
+            text-align: center;
+            padding: 100px 20px;
+            max-width: 900px;
+            margin: auto;
+            flex: 1;
+        }
+        main h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 1.2s ease;
+        }
+        main p {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            animation: fadeInUp 1.4s ease;
+        }
+        .features {
+            text-align: left;
+            margin-top: 30px;
+            padding: 20px 20px 20px 40px; /* Added left padding */
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: inline-block;
+            width: 100%;
+        }
+        .features h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #ffcc00;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features ul li {
+            font-size: 1.2rem;
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            padding-left: 25px; /* Shift text slightly to the right */
+        }
+        .features ul li:last-child {
+            border-bottom: none;
+        }
+        .features ul li::before {
+            content: "✔";
+            color: #ffcc00;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            background: #ff6a00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .btn:hover {
+            background: #e94057;
+            transform: scale(1.1);
+        }
+        /* Footer Styles */
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1rem;
+            margin-top: auto;
+        }
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            main h2 {
+                font-size: 2.5rem;
+            }
+            main p {
+                font-size: 1.2rem;
+            }
+            nav a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DDoS Detection Using Deep Learning</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/team">Team</a>
+            <a href="/predict">Predict</a>
+            <a href="/about">About</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to the DDoS Detection System</h2>
+        <p>Leverage the power of deep learning to detect and mitigate potential DDoS attacks in real-time.</p>
+        <p>A DDoS attack disrupts network traffic by overwhelming it with malicious requests. Our system analyzes traffic patterns and identifies anomalies to prevent attacks before they cause harm.</p>
+        
+        <div class="features">
+            <h3>Key Features</h3>
+            <ul>
+                <li>Real-time traffic monitoring</li>
+                <li>AI-based anomaly detection</li>
+                <li>Automated threat mitigation</li>
+                <li>High detection accuracy with deep learning models</li>
+                <li>Scalable for large networks and cloud environments</li>
+                <li>Easy-to-use interface for security teams</li>
+            </ul>
+        </div>
+
+        <form action="predict" method="get">
+            <button class="btn" type="submit">Get Started</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 DDoS Detection System | CSE (IoT, Cybersecurity including Blockchain Technology)</p>
+    </footer>
+</body>
+</html>
